@@ -1,0 +1,32 @@
+for 1000 iterations
+
+Cases
+
+1. Arrival rate < Service Rate
+
+    Service rate = 0.1
+    Arrival rate = [0.025, 0.05, 0.075]
+
+    Since the system is probabilistic, although the service rate is greater than arrival rate, the queue length is not zero
+    
+    in 1000 iterations, service will be approx 100 times
+                        arrival resp 25, 50, 100 times randomly
+
+    experimental queue length approx 0.2, 1.2, 1.2
+    much less as compared to the no. of arrivals
+
+2. Arrival rate = Service Rate
+    Service rate = 0.1 = Arrival rate
+
+    Still arrivals equal to service. Theoretically it should blow up
+    Intuitively in deterministic system, no of. arrivals = no. of services
+    
+
+    Therefore avg queue length should be equal
+
+    
+3. Arrival rate > Service rate
+
+    In this case, Absolute no of arrivals > absolute no of services
+    therefore Queue length will never be zero
+    Hence average queue length blows up
